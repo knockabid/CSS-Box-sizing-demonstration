@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+      code {
+        font-family: Consolas, "courier new";
+        color: crimson;
+        background-color: #f1f1f1;
+        padding: 2px;
+        font-size: 105%;
+      }
+      .box {
+        width: 300px;
+        background-color: antiquewhite;
+        padding: 50px;
+        border: 2px solid #f1f1f1;
+        border-radius: 5px;
+      }
+      .box-with-border-box {
+        width: 300px;
+        background-color: antiquewhite;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 50px;
+        border: 2px solid #f1f1f1;
+        border-radius: 5px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Note:
+    
+    The main thing is Box sizing is a propertry that let you to get the exact width you want without expanding it, Let see some demos
+
+    -->
+
+    <!--this is without box-sizing -->
+    <h3>BOX 01:</h3>
+
+    <div class="box">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+        praesentium!
+      </p>
+      Note : This is not actual width of the container.
+      <code> width: 300px; </code>
+      But what are you seeing here is not 300px, This box Added the padding
+    </div>
+    <h3>BOX 02:</h3>
+    <div class="box-with-border-box">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non,
+        praesentium!
+      </p>
+      Note : This is the actual Size of The Container
+    </div>
+
+    <h1>Detailed Explaination</h1>
+    Normal Phase : <code>Box-sizing:content-box</code><br> 
+    Used Phase :<code>Box-sizing:Border-box</code><br>
+      <img
+      src="https://tutorial.techaltum.com/images/box-sizing.jpg"
+      alt=""
+      width="70%"
+    />
+  
+  </body>
+</html>
